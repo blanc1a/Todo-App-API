@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --clr-background: #fed06e;
+  --clr-form: #f2f2f4;
+  --clr-form-shadow: #d5af5e;
+  --clr-button: white;
+  --clr-button-border: #a6aab5;
+  --clr-button-hover: #ffcc2a;
+}
+html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-background);
+}
+
+form {
+  background-color: var(--clr-form);
+  box-shadow: 5px 5px 5px var(--clr-form-shadow);
+  padding: 2rem;
+  border-radius: 20px;
+}
+h1 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.removeToDo {
+  padding-bottom: 0.5rem;
+}
+
+button {
+  background-color: var(--clr-button);
+  border: var(--clr-button-border);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: var(--clr-button-hover);
+  cursor: pointer;
+}
+
+input {
+  border: var(--clr-button-border);
+  background-color: var(--clr-button);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.List {
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}

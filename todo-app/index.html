@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App with State Mangement</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <form>
+        <h1>Todo App</h1>
+        <!--Browser muss wissen, dass radiobuttons teil eines Sets sind => name-attribut-->
+        <!--Um radiobuttons trotzdem zu unterscheiden => id-attribut & value-attribut-->
+        <!--label for-attribut connected mit input id-attribut-->
+        <ul id="filterListe">
+            <li>
+                <label for="all">All </label>
+                <input id="all" type="radio" name="filterOption" checked>
+            </li>
+            <li>
+                <label for="open">Open </label>
+                <input id="open" type="radio" name="filterOption">
+            </li>
+            <li>
+                <label for="done">Done </label>
+                <input id="done" type="radio" name="filterOption">
+            </li>
+        </ul>
+        <div class="removeToDo">
+            <button id="removeButton">Remove done Todos</button>
+        </div>
+        <input id="newToDo" type="text" placeholder="What's up?">
+        <button id="addButton">Add</button>
+        <ul id="List">
+            <li>
+                <input id="ToDos" type="checkbox" name="ToDos">
+                <label id="firstToDo" for="ToDos">Reviewing fundamentals of HTML and CSS</label>
+            </li>
+        </ul>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
